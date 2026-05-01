@@ -4,7 +4,8 @@
 
 :root {
   --font-family-base: "Roboto Flex", sans-serif;
-  --font-family-heading: "Gowun  Batang", sans-serif;
+  --font-family-heading: "Gowun Batang", sans-serif;
+  --font-family-secondary-heading: "Rethink Sans", sans-serif;
   --font-size-sm: 0.875rem;
   --font-size-base: 1rem;
   --font-size-lg: 1.25rem;
@@ -30,6 +31,8 @@
 
 body {
   font-family: var(--font-family-base);
+  margin: 0;
+  padding: 0;
 }
 
 h1,
@@ -54,9 +57,8 @@ h4 {
   align-items: center;
   flex-direction: column;
   background-color: rgb(255, 255, 255);
-  width: 100%;
   gap: var(--space-12);
-  padding: 0 65px 20px;
+  padding: 0 2em;
   text-align: center;
 }
 
@@ -71,13 +73,14 @@ h4 {
   line-height: 1.1;
   text-decoration: none;
   width: 100%;
-  padding: var(--space-2);
+  padding: 1em;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .header_section .nav_header a {
   text-decoration: none;
   color: black;
+  padding: 0 1em;
 }
 
 .header_section .nav_header a p {
@@ -109,13 +112,13 @@ h4 {
 .header_section .header_eyebrow a {
   text-decoration: none;
   color: black;
-  font-family: "Gowun  Batang";
+  font-family: var(--font-family-heading);
   font-weight: 500;
 }
 
 .header_section .header_primary_title h1 {
   font-size: var(--font-size-3xl);
-  font-family: "Gowun  Batang";
+  font-family: var(--font-family-heading);
   font-weight: 500;
 }
 
@@ -131,6 +134,74 @@ h4 {
 }
 
 .header_section .header_img_container img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* What We Do Section */
+
+.what_we_do_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.what_we_do_section h2 {
+  font-size: var(--font-size-3xl);
+  font-family: var(--font-family-heading);
+  font-weight: var(--font-weight-regular);
+}
+
+.what_we_do_section h3 {
+  font-size: var(--font-size-base);
+  font-family: var(--font-family-secondary-heading);
+}
+
+.what_we_do_section .info_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: var(--space-12);
+  text-align: center;
+}
+
+.what_we_do_section .info_card h3 {
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-2xl);
+}
+
+.what_we_do_section .info_card p {
+  font-family: var(--font-family-heading);
+}
+
+.what_we_do_section .info_card .info_card_secondary {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+  padding: var(--space-10);
+}
+
+.what_we_do_section .info_card .info_card_secondary h4 {
+  font-family: var(--font-family-secondary-heading);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-xl);
+}
+
+.what_we_do_section .info_card .info_card_secondary p {
+  font-family: var(--font-family-heading);
+}
+
+/*Img Break*/
+
+.img_break_container {
+  width: 100%;
+  height: 100%;
+}
+
+.img_break_container img {
   object-fit: cover;
   width: 100%;
   height: 100%;
