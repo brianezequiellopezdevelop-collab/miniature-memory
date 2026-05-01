@@ -309,11 +309,52 @@ h4 {
   font-family: var(--font-family-heading);
   font-weight: var(--font-weight-regular);
   font-size: var(--font-size-2xl);
-  padding: 0;
 }
 
 .latest_news_section .info_news .second_news h4 {
   font-family: var(--font-family-secondary-heading);
   font-weight: var(--font-weight-regular);
   font-size: var(--font-size-xl);
+}
+
+/* Regional Results Section */
+
+.regional_results_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.regional_results_section h2 {
+  font-size: var(--font-size-3xl);
+  font-family: var(--font-family-heading);
+  font-weight: var(--font-weight-regular);
+}
+
+.regional_results_section h3 {
+  font-family: var(--font-family-heading);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-2xl);
+}
+
+.regional_results_section h4 {
+  font-family: var(--font-family-heading);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-xl);
+}
+
+.regional_results_section p {
+  font-family: var(--font-family-heading);
+}
+
+.regional_results_section .container_results {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5em;
+}
+
+.regional_results_section .container_results a {
+  text-decoration: none;
+  color: black;
 }
