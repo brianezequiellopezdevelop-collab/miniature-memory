@@ -630,7 +630,3 @@ footer .copyright_container {
     font-size: var(--font-size-sm);
   }
 }
-
-* {
-  outline: 1px solid red;
-}
